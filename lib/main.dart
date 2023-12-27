@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MaterialApp(home: HomePage()));
@@ -13,7 +13,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-
   AudioPlayer player = AudioPlayer();
 
   @override
@@ -28,7 +27,7 @@ class _HomePageState extends State<HomePage> {
         padding: const EdgeInsets.all(16),
         child: SingleChildScrollView(
           child: Column(
-            children: [
+            children: <Widget>[
               Row(
                 children: <Widget>[
                   Expanded(
@@ -43,7 +42,7 @@ class _HomePageState extends State<HomePage> {
                           borderRadius: BorderRadius.circular(15.0), // Adjust the value for the roundness
                         ),
                         alignment: Alignment.center,
-                        child: const Text("Salut!",
+                        child: const Text('Salut!',
                             style: TextStyle(
                               color: Colors.white,
                             )),
